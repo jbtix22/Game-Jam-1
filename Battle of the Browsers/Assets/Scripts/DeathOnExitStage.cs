@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class DeathOnExitStage : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+  
+    void Start () {
+
+        
+
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		
+	
+
+
 	}
+
+    private void OnCollisionExit(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+
+            Destroy(col.gameObject);
+        }
+
+        Debug.Log("Collision has been Detected");
+
+    }
+
 }
