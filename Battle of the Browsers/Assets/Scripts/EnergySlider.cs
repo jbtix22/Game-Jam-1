@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class EnergyIncreaser : MonoBehaviour
+public class EnergySlider : MonoBehaviour
 {
 
-
-
-
+    public Slider energybar;
+    public float energy_left;
 
     // Use this for initialization
     void Start()
@@ -18,6 +18,7 @@ public class EnergyIncreaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale += new Vector3(0, 0.1F, 0);
+        energy_left = energybar.value;
+        energy_left += .01;
     }
 }
