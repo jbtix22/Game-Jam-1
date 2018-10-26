@@ -628,6 +628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588990110}
   - component: {fileID: 1588990111}
+  - component: {fileID: 1588990112}
   m_Layer: 5
   m_Name: Energy
   m_TagString: Untagged
@@ -703,6 +704,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1588990112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588990109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ff5b087858c48e8991c79044c29c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energybar: {fileID: 0}
+  energy_left: 0
 --- !u!1 &1638898258
 GameObject:
   m_ObjectHideFlags: 0

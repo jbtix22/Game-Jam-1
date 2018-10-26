@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class EnergySlider : MonoBehaviour
 {
 
-    public Slider energybar;
+    public Slider Energy;
     public float energy_left;
+    public bool sendCallBack;
 
     // Use this for initialization
     void Start()
@@ -16,9 +17,12 @@ public class EnergySlider : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        energy_left = energybar.value;
-        energy_left += .01;
+        energy_left = Energy.value;
+        energy_left += .01F;
+        //Slider.Set(energybar.value, sendCallBack);
     }
+
+    public void EnergyLeft(float energy_left, bool sendCallBack);
 }
