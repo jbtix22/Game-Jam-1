@@ -19,7 +19,7 @@ public class CPUScript : MonoBehaviour {
         playerDir = playerDir.normalized;
 
     }
-    float timeLeft = 2.0f;
+    float timeLeft = 1.0f;
 
     void Update()
     {
