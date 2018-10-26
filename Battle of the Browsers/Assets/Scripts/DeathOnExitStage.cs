@@ -7,26 +7,39 @@ public class DeathOnExitStage : MonoBehaviour {
   
     void Start () {
 
-        
+
 
 	}
 	
 	void Update () {
-	
 
 
-	}
 
-    private void OnCollisionExit(Collision col)
+        }
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (col.gameObject.tag == "Player")
+        if (Physics.IgnoreCollision.gameObject.tag == "Player"){
+
+
+        }
+    }
+
+
+    void OnCollisionExit(Collision collisionInfo)
+    {
+
+        if (collisionInfo.gameObject.tag == "Player")
         {
 
-            Destroy(col.gameObject);
+
+            Destroy(collisionInfo.gameObject);
         }
 
         Debug.Log("Collision has been Detected");
 
     }
 
-}
+       
+
+    }
