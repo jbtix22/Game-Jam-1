@@ -10,21 +10,12 @@ public class DeathOnExitStage : MonoBehaviour {
 
 
 	}
-	
-	void Update () {
 
-
-
-        }
-
-    private void OnCollisionEnter(Collision collision)
+    void Update()
     {
-        if (Physics.IgnoreCollision.gameObject.tag == "Player"){
 
 
-        }
     }
-
 
     void OnCollisionExit(Collision collisionInfo)
     {
