@@ -715,8 +715,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ff5b087858c48e8991c79044c29c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energybar: {fileID: 0}
+  Energy: {fileID: 1588990111}
   energy_left: 0
+  sendCallBack: 0
 --- !u!1 &1638898258
 GameObject:
   m_ObjectHideFlags: 0

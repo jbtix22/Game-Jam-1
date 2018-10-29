@@ -17,12 +17,11 @@ public class EnergySlider : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        energy_left = Energy.value;
-        energy_left += .01F;
+        Energy.value += .01F;
         //Slider.Set(energybar.value, sendCallBack);
     }
 
-    public void EnergyLeft(float energy_left, bool sendCallBack);
+    //public void EnergyLeft(float energy_left, bool sendCallBack);
 }
