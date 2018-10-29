@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class RayCastForDeath : MonoBehaviour {
 
-	// Use this for initialization
+    public float stageRadius;
+
 	void Start () {
 		
+
+
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
+        if(Physics.Raycast(transform.position, )) {
+
+
+        }
+
+
+        }
+
+
+
 	}
-}
