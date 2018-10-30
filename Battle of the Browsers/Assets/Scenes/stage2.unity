@@ -979,7 +979,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1506176660}
-  clickForce: 200
+  clickForce: 500
+  energy: 0
 --- !u!54 &1506176660
 Rigidbody:
   m_ObjectHideFlags: 0
