@@ -5,7 +5,8 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour {
 
     public Rigidbody rb;
-    public int clickForce = 500;
+    public int clickForce = 7500;
+    public float energy = GameObject.Find("Energy").GetComponent<EnergySlider>().energy_left;
 
     void FixedUpdate()
     {
@@ -18,7 +19,8 @@ public class playerMovement : MonoBehaviour {
         {
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
-            rb.AddForce(mouseDir * clickForce);
+            energy = GameObject.Find("Energy").GetComponent<EnergySlider>().energy_left;
+            rb.AddForce(mouseDir * clickForce * energy);
         }
     }
 
