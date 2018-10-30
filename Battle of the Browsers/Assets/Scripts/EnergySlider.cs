@@ -22,7 +22,7 @@ public class EnergySlider : MonoBehaviour
 
         Energy.value += .0075F;
         energy_left = Energy.value;
-        //Slider.Set(energybar.value, sendCallBack);
+
     }
 
     //public void EnergyLeft(float energy_left, bool sendCallBack);
