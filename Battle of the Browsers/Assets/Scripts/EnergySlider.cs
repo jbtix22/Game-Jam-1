@@ -20,10 +20,17 @@ public class EnergySlider : MonoBehaviour
     void Update()
     {
 
+
         Energy.value += .0075F;
         energy_left = Energy.value;
+        if (Input.GetMouseButtonDown(0))
+        {
+            Energy.value = 0;
+            energy_left = 0;
+        }
+
 
     }
 
-    //public void EnergyLeft(float energy_left, bool sendCallBack);
+
 }
