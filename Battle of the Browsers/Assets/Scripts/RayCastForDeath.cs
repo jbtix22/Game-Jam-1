@@ -21,7 +21,7 @@ public class RayCastForDeath : MonoBehaviour
         Distance_ = Vector3.Distance(Player.transform.position, DeathDetector.transform.position);
 
 
-        if (Distance_ > 2.5) {
+        if (Distance_ > 3.05) {
 
             Destroy(gameObject);
             Debug.Log("Player has Exited Stage");
