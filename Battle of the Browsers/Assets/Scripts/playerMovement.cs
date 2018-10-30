@@ -7,6 +7,7 @@ public class playerMovement : MonoBehaviour {
     public Rigidbody rb;
     public int clickForce = 7500;
     public float energy = GameObject.Find("Energy").GetComponent<EnergySlider>().energy_left;
+
     void FixedUpdate()
     {
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

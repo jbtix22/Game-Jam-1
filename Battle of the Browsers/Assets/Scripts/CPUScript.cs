@@ -8,6 +8,7 @@ public class CPUScript : MonoBehaviour {
     public int clickForceCPU = 500;
     public Vector3 playerPos;
     public Vector3 playerDir;
+    public float energyCPU;
 
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -23,14 +24,16 @@ public class CPUScript : MonoBehaviour {
 
     void Update()
     {
+        energyCPU += .0075f;
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
         {
             rbCPU.velocity = Vector3.zero;
             rbCPU.angularVelocity = Vector3.zero;
-            rbCPU.AddForce(playerDir * clickForceCPU);
+            rbCPU.AddForce(playerDir * clickForceCPU * energyCPU);
             Debug.Log(playerDir);
             timeLeft = Random.Range(0.2f, 2f);
+            energyCPU = 0;
         }
     }
 }

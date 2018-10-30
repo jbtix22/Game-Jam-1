@@ -296,9 +296,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbCPU: {fileID: 348560036}
-  clickForceCPU: 200
+  clickForceCPU: 500
   playerPos: {x: 0, y: 0, z: 0}
   playerDir: {x: 0, y: 0, z: 0}
+  energyCPU: 0
 --- !u!1 &523420777
 GameObject:
   m_ObjectHideFlags: 0
