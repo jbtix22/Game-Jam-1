@@ -2,26 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayCastForDeath : MonoBehaviour {
+public class RayCastForDeath : MonoBehaviour
+{
 
-    public float stageRadius;
+    public GameObject Player;
+    public GameObject DeathDetector;
+    public float Distance_;
+    void Start()
+    {
 
-	void Start () {
-		
 
 
-	}
-	
-	void Update () {
-		
-        if(Physics.Raycast(transform.position, )) {
+    }
 
+    void Update()
+    {
+
+        Distance_ = Vector3.Distance(Player.transform.position, DeathDetector.transform.position);
+
+
+        if (Distance_ > 2.5) {
+
+            Destroy(gameObject);
+            Debug.Log("Player has Exited Stage");
 
         }
+    }
 
-
-        }
-
-
-
-	}
+}

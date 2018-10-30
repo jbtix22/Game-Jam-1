@@ -303,9 +303,8 @@ GameObject:
   - component: {fileID: 1506176656}
   - component: {fileID: 1506176655}
   - component: {fileID: 1506176659}
-  - component: {fileID: 1506176660}
   - component: {fileID: 1506176661}
-  - component: {fileID: 1506176662}
+  - component: {fileID: 1506176660}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -414,22 +413,14 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1506176654}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97dc1d498abef4163b1a1d620f87e300, type: 3}
+  m_Script: {fileID: 11500000, guid: 139818943ad4e489ca743f7c6a671597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!75 &1506176662
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1506176654}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 2}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
+  Player: {fileID: 1506176654}
+  DeathDetector: {fileID: 1600625501}
+  Distance_: 0
 --- !u!1 &1600625501
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139818943ad4e489ca743f7c6a671597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  DeathDetector: {fileID: 0}
+  Distance_: 0
 --- !u!212 &1600625503
 SpriteRenderer:
   m_ObjectHideFlags: 0
